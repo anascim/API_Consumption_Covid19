@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Global-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="NovelCovid_API_TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Mundo" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="152.5" y="93" width="109" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CHb-Av-o5r">
+                                <rect key="frame" x="20" y="166" width="374" height="647"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="CHb-Av-o5r" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="UIg-V1-gMK"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="CHb-Av-o5r" secondAttribute="trailing" constant="20" id="WPV-Tw-Knt"/>
+                            <constraint firstItem="CHb-Av-o5r" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="aWU-SU-7lN"/>
+                            <constraint firstItem="CHb-Av-o5r" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="30" id="dms-uw-xgL"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="49" id="nPB-K5-mgx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Global" image="globe" catalog="system" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="textView" destination="CHb-Av-o5r" id="gb7-E7-yxD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
+        </scene>
+        <!--Brasil-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="NovelCovid_API_TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Brasil" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eTs-5O-1mu">
+                                <rect key="frame" x="164.5" y="94" width="85" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lFo-YU-8z8">
+                                <rect key="frame" x="20" y="166" width="374" height="647"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eTs-5O-1mu" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="2h3-8t-HLR"/>
+                            <constraint firstItem="lFo-YU-8z8" firstAttribute="top" secondItem="eTs-5O-1mu" secondAttribute="bottom" constant="29" id="5Ot-SR-dZC"/>
+                            <constraint firstItem="lFo-YU-8z8" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="20" id="OTk-AT-9Oj"/>
+                            <constraint firstItem="eTs-5O-1mu" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="50" id="cNm-ut-rdT"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="lFo-YU-8z8" secondAttribute="trailing" constant="20" id="pDm-ym-N50"/>
+                            <constraint firstItem="lFo-YU-8z8" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="vQy-zp-For"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Brasil" image="first" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="textView" destination="lFo-YU-8z8" id="1Xr-Or-Obr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="353"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="Udm-e0-Lu9" kind="relationship" relationship="viewControllers" id="kDy-Re-3O6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="-29"/>
+        </scene>
+        <!--Custom-->
+        <scene sceneID="zfP-M4-PUh">
+            <objects>
+                <viewController id="Udm-e0-Lu9" customClass="CustomViewController" customModule="NovelCovid_API_TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wnl-7r-Rh3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="https://corona.lmao.ninja/all" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CbX-Ob-gpW">
+                                <rect key="frame" x="20" y="164" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Custom URL" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="r9U-Rn-I5B">
+                                <rect key="frame" x="109" y="94" width="196" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8c-I9-EOP">
+                                <rect key="frame" x="178.5" y="228" width="57" height="30"/>
+                                <state key="normal" title="Request"/>
+                                <connections>
+                                    <action selector="request:" destination="Udm-e0-Lu9" eventType="touchUpInside" id="cSj-hh-xty"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bcq-gJ-Odd">
+                                <rect key="frame" x="20" y="266" width="374" height="547"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Bcq-gJ-Odd" firstAttribute="top" secondItem="z8c-I9-EOP" secondAttribute="bottom" constant="8" id="1iJ-37-bff"/>
+                            <constraint firstItem="r9U-Rn-I5B" firstAttribute="top" secondItem="Ob0-4b-j78" secondAttribute="top" constant="50" id="1xS-YY-Akd"/>
+                            <constraint firstItem="CbX-Ob-gpW" firstAttribute="top" secondItem="r9U-Rn-I5B" secondAttribute="bottom" constant="27" id="IB4-P6-cPs"/>
+                            <constraint firstItem="Ob0-4b-j78" firstAttribute="trailing" secondItem="Bcq-gJ-Odd" secondAttribute="trailing" constant="20" id="IO9-oR-opb"/>
+                            <constraint firstItem="z8c-I9-EOP" firstAttribute="top" secondItem="CbX-Ob-gpW" secondAttribute="bottom" constant="30" id="P35-lu-4W3"/>
+                            <constraint firstItem="z8c-I9-EOP" firstAttribute="centerX" secondItem="wnl-7r-Rh3" secondAttribute="centerX" id="S9G-gT-ne3"/>
+                            <constraint firstItem="Bcq-gJ-Odd" firstAttribute="leading" secondItem="Ob0-4b-j78" secondAttribute="leading" constant="20" id="W3X-KB-nI4"/>
+                            <constraint firstItem="Bcq-gJ-Odd" firstAttribute="bottom" secondItem="Ob0-4b-j78" secondAttribute="bottom" id="Zts-tb-zJj"/>
+                            <constraint firstItem="r9U-Rn-I5B" firstAttribute="centerX" secondItem="wnl-7r-Rh3" secondAttribute="centerX" id="aDJ-It-5A5"/>
+                            <constraint firstItem="CbX-Ob-gpW" firstAttribute="leading" secondItem="Ob0-4b-j78" secondAttribute="leading" constant="20" id="quS-c5-laY"/>
+                            <constraint firstItem="Ob0-4b-j78" firstAttribute="trailing" secondItem="CbX-Ob-gpW" secondAttribute="trailing" constant="20" id="vek-wG-x9o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ob0-4b-j78"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Custom" image="second" id="FNs-uv-w4e"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="textField" destination="CbX-Ob-gpW" id="D6Y-r9-YPO"/>
+                        <outlet property="textView" destination="Bcq-gJ-Odd" id="TJg-kO-kXL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vFk-Sp-Xiz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="697.76785714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
